@@ -4,8 +4,12 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   async function apiTest() {
-    const res = await fetch("https://p1ojmprnji.execute-api.eu-north-1.amazonaws.com/TestStage/my-test");
-    console.log(res);
+    const res = await fetch("https://p1ojmprnji.execute-api.eu-north-1.amazonaws.com/TestStage/my-test")
+    .then(response => {
+      console.log(response.json());
+      return("res anon", response.json());
+    });
+    console.log("res console", res);
   }
   return (
     <div>
