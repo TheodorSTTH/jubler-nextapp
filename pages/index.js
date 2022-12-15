@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="text-3xl font-bold underline">
+      <h1 className="text-3xl font-bold underline ">
         Hello world! I love tailwindcss
         <button onClick={apiTest}>
         <button onClick={apiTest} className="border-white border-2">
