@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   async function apiTest() {
     const res = await fetch("https://p1ojmprnji.execute-api.eu-north-1.amazonaws.com/TestStage/my-test");
+    const res = await fetch("https://catfact.ninja/fact");
     console.log("res console", await res.json());
   }
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <h1 className="text-3xl font-bold underline">
         Hello world! I love tailwindcss
         <button onClick={apiTest}>
+        <button onClick={apiTest} className="border-white border-2">
           API CALL
         </button>
       </h1>
