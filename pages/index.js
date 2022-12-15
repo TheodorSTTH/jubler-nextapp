@@ -7,6 +7,7 @@ export default function Home() {
     const res = await fetch("https://catfact.ninja/fact ");
     console.log("res console", await res.json());
   }
+  
   return (
     <div>
       <Head>
